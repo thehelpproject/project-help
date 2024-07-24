@@ -15,11 +15,25 @@ struct HTextField: View {
         self.title = title
     }
     var body: some View {
-        TextField(title ,text:$statex)
-            .textFieldStyle(.roundedBorder)
-            .border(.purple)
-            .padding()
+        HStack{
+            Spacer()
+            Image(systemName: "network")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Spacer()
+            TextField(title ,text:$statex)
+            Image(systemName: "x.circle")
+                .imageScale(.medium)
+                .foregroundStyle(.tint)
+                .onTapGesture {
+                    statex = " "
+                }
+            Spacer()
             
+        }.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+        .border(.purple)
+        .padding()
+        .textFieldStyle(.roundedBorder)
     }
 }
 
