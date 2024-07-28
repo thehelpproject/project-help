@@ -40,11 +40,6 @@ struct ContentView: View {
             HTextField(contactPersonContactLabel,"")
             HTextField(hospitalLabel,"")
             HButton("Submit")
-            
-            Image(systemName: "network")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
         }.onAppear(perform: {
             focus = true
         })

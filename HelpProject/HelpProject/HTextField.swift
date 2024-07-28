@@ -26,14 +26,15 @@ struct HTextField: View {
                 .imageScale(.medium)
                 .foregroundStyle(.tint)
                 .onTapGesture {
-                    statex = " "
+                    statex = ""
                 }
             Spacer()
-            
-        }.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-        .border(.purple)
+        }.padding(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
+        .overlay(RoundedRectangle(cornerRadius: 8)
+            .stroke(Color.purple, lineWidth: 2))
+        .cornerRadius(8)
+        .shadow(radius: 12)
         .padding()
-        .textFieldStyle(.roundedBorder)
     }
 }
 

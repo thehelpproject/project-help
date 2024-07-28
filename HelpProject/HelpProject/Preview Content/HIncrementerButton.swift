@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct HIncrementerButton: View {
+    @State private var count = 0
+    @State var units: String?
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Button(action: {
+                count-=1
+            }, label: {
+                Image(systemName: "minus.circle")
+            }).animation(.easeIn)
+            Text("\(count)")
+            if let unit = units {
+                Text("\(unit)")
+            }
+            Button(action: {
+                count+=1
+            }, label: {
+                Image(systemName: "plus.circle")
+            })
+        }
     }
 }
 
