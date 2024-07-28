@@ -17,6 +17,7 @@
 		A48242002C4EA840001EE208 /* HelpProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48241FF2C4EA840001EE208 /* HelpProjectTests.swift */; };
 		A482420A2C4EA840001EE208 /* HelpProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48242092C4EA840001EE208 /* HelpProjectUITests.swift */; };
 		A482420C2C4EA840001EE208 /* HelpProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482420B2C4EA840001EE208 /* HelpProjectUITestsLaunchTests.swift */; };
+		A4AE68772C516CDB002CC4AD /* HIncrementerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AE68762C516CDB002CC4AD /* HIncrementerButton.swift */; };
 		BD621F6EE1FEC0C1CA19EC68 /* Pods_HelpProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45B3868B4741E0DDA059BAC /* Pods_HelpProjectTests.framework */; };
 		C33288FB098FBC322CA8F4CE /* Pods_HelpProject_HelpProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D77F926B292D8270FF97A /* Pods_HelpProject_HelpProjectUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		A48242052C4EA840001EE208 /* HelpProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48242092C4EA840001EE208 /* HelpProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpProjectUITests.swift; sourceTree = "<group>"; };
 		A482420B2C4EA840001EE208 /* HelpProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4AE68762C516CDB002CC4AD /* HIncrementerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIncrementerButton.swift; sourceTree = "<group>"; };
 		B45B3868B4741E0DDA059BAC /* Pods_HelpProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A099C44F29DC111CC5A6AD /* Pods-HelpProject-HelpProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpProject-HelpProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-HelpProject-HelpProjectUITests/Pods-HelpProject-HelpProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 			children = (
 				A48241F52C4EA840001EE208 /* Preview Assets.xcassets */,
 				A43E778A2C4EC83F000DE5DE /* HButton.swift */,
+				A4AE68762C516CDB002CC4AD /* HIncrementerButton.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AE68772C516CDB002CC4AD /* HIncrementerButton.swift in Sources */,
 				A43E778B2C4EC83F000DE5DE /* HButton.swift in Sources */,
 				A48241F12C4EA83D001EE208 /* ContentView.swift in Sources */,
 				A48241EF2C4EA83D001EE208 /* HelpProjectApp.swift in Sources */,
