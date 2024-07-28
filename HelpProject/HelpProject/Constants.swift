@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+public let EMPTY_STRING:String = ""
