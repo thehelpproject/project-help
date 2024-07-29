@@ -26,29 +26,30 @@ struct OptionsCardView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text(cardTitle)
-                    .padding()
-                Spacer()
-            }
+            Text(cardTitle)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
             HStack {
                 ForEach(options) { opt in
+                    Spacer()
                     VStack {
                         Image(systemName: opt.imageName)
                             .resizable()
-                            .frame(width: 42.0, height:42)
+                            .frame(width: 42, height:42)
                             .padding(EdgeInsets(top: 0, leading: 20, bottom: -15, trailing: 20))
                             .foregroundColor(imgFillColor)
                         Text(opt.displayName)
                             .padding()
                     }
+                    Spacer()
                 }
             }
         }
         .overlay(RoundedRectangle(cornerRadius: 12)
-            .stroke(Color.purple, lineWidth: 8))
+            .stroke(Color.purple, lineWidth: 4))
         .cornerRadius(12)
         .padding()
+        
     }
 }
 
