@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B4B45CCD6A8D14957BB102A /* Pods_HelpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BFBE51023ABE279B7D7C3C /* Pods_HelpProject.framework */; };
+		8B554A992C57E84300A146E9 /* OptionsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B554A982C57E84300A146E9 /* OptionsCardView.swift */; };
 		A433A1E02C56B9EA001DA128 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433A1DF2C56B9EA001DA128 /* Constants.swift */; };
 		A43E77892C4EBE6C000DE5DE /* HTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43E77882C4EBE6C000DE5DE /* HTextField.swift */; };
 		A43E778B2C4EC83F000DE5DE /* HButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43E778A2C4EC83F000DE5DE /* HButton.swift */; };
@@ -47,6 +48,7 @@
 		55BFBE51023ABE279B7D7C3C /* Pods_HelpProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A0A1A04B3AC157988CBC6 /* Pods-HelpProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpProject.debug.xcconfig"; path = "Target Support Files/Pods-HelpProject/Pods-HelpProject.debug.xcconfig"; sourceTree = "<group>"; };
 		73CE19EED6C611155CD6EC04 /* Pods-HelpProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpProjectTests.release.xcconfig"; path = "Target Support Files/Pods-HelpProjectTests/Pods-HelpProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B554A982C57E84300A146E9 /* OptionsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCardView.swift; sourceTree = "<group>"; };
 		A0CDE1FB2CFCA1004A6EDD94 /* Pods-HelpProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpProject.release.xcconfig"; path = "Target Support Files/Pods-HelpProject/Pods-HelpProject.release.xcconfig"; sourceTree = "<group>"; };
 		A433A1DF2C56B9EA001DA128 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A43E77882C4EBE6C000DE5DE /* HTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTextField.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				A48241F42C4EA840001EE208 /* Preview Content */,
 				A43E77882C4EBE6C000DE5DE /* HTextField.swift */,
 				A433A1DF2C56B9EA001DA128 /* Constants.swift */,
+				8B554A982C57E84300A146E9 /* OptionsCardView.swift */,
 			);
 			path = HelpProject;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AE68772C516CDB002CC4AD /* HIncrementerButton.swift in Sources */,
+				8B554A992C57E84300A146E9 /* OptionsCardView.swift in Sources */,
 				A43E778B2C4EC83F000DE5DE /* HButton.swift in Sources */,
 				A48241F12C4EA83D001EE208 /* ContentView.swift in Sources */,
 				A48241EF2C4EA83D001EE208 /* HelpProjectApp.swift in Sources */,
