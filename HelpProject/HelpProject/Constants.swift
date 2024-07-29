@@ -22,16 +22,18 @@ public let HUMAN_TITLE = "Human"
 
 //Section Needed
 public let SECTION_HEADING_NEEDED = "Needed"
-public let WORK_IMAGE = "bag.fill"
+public let WORK_IMAGE = "network"
 public let WORK_TITLE = "Work"
-public let BLOOD_IMAGE = "pawprint.fill"
+public let BLOOD_IMAGE = "drop.fill"
 public let BLOOD_TITLE = "Blood"
+public let MONEY = "Money"
+public let MONEY_IMAGE = "indianrupeesign.circle.fill"
 
 //Section Donate
 public let SECTION_HEADING_DONATE = "Donate"
-public let US_IMAGE = "bag.fill"
+public let US_IMAGE = "indianrupeesign.circle.fill"
 public let US_TITLE = "US"
-public let OTHERS_IMAGE = "pawprint.fill"
+public let OTHERS_IMAGE = "indianrupeesign.circle.fill"
 public let OTHERS_TITLE = "Others"
 
 

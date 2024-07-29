@@ -45,6 +45,7 @@ public struct HOptionsCardViewNew: View {
                     VStack {
                         Image(systemName: opt.imageName)
                             .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .frame(width: frameWidth, height:frameHeight)
                             .padding(EdgeInsets(top: paddingInsetTop, leading: paddingInsetLeading, bottom: paddingInsetBottom, trailing: paddingInsetTrailing))
                             .foregroundColor(imgFillColor)
