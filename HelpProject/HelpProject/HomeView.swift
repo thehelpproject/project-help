@@ -13,37 +13,39 @@ struct Section: Identifiable {
     var options: [Option]
 }
 
-var lostSection: [Option] {
-     [Option(displayName: "Object", imageName: "bag.fill"),
-     Option(displayName: "Pet", imageName: "pawprint.fill"),
-     Option(displayName: "Person", imageName: "person.fill")]
+var lostOptions: [Option] {
+     [Option(displayName: OBJECT_TITLE, imageName: OBJECT_IMAGE),
+     Option(displayName: PET_TITLE, imageName: PET_IMAGE),
+     Option(displayName: HUMAN_TITLE, imageName: HUMAN_IMAGE)]
  }
 
-var foundSection: [Option] {
-     [Option(displayName: "Object", imageName: "bag.fill"),
-     Option(displayName: "Pet", imageName: "pawprint.fill"),
-     Option(displayName: "Person", imageName: "person.fill")]
+var foundOptions: [Option] {
+    [Option(displayName: OBJECT_TITLE, imageName: OBJECT_IMAGE),
+    Option(displayName: PET_TITLE, imageName: PET_IMAGE),
+    Option(displayName: HUMAN_TITLE, imageName: HUMAN_IMAGE)]
  }
 
-var neededSection: [Option] {
-     [Option(displayName: "Object", imageName: "bag.fill"),
-     Option(displayName: "Pet", imageName: "pawprint.fill"),
-     Option(displayName: "Person", imageName: "person.fill")]
+var neededOptions: [Option] {
+     [Option(displayName: WORK_TITLE, imageName: WORK_IMAGE),
+     Option(displayName: BLOOD_TITLE, imageName: BLOOD_IMAGE),
+    ]
  }
 
-var donateSection: [Option] {
-     [Option(displayName: "Object", imageName: "bag.fill"),
-     Option(displayName: "Pet", imageName: "pawprint.fill"),
-     Option(displayName: "Person", imageName: "person.fill")]
+var donateOptions: [Option] {
+     [
+      Option(displayName: US_TITLE, imageName: US_IMAGE),
+      Option(displayName: OTHERS_TITLE, imageName: OTHERS_IMAGE),
+      Option(displayName: BLOOD_TITLE, imageName: BLOOD_IMAGE)
+     ]
  }
 
 struct HomeView: View {
     
     @State var sections: [Section] = {
-        [Section(title: "Lost", options: lostSection),
-         Section(title: "Found", options: foundSection),
-         Section(title: "Needed", options: neededSection),
-         Section(title: "Donate", options: donateSection)]
+        [Section(title: SECTION_HEADING_LOST, options: lostOptions),
+         Section(title: SECTION_HEADING_FOUND, options: foundOptions),
+         Section(title: SECTION_HEADING_NEEDED, options: neededOptions),
+         Section(title: SECTION_HEADING_DONATE, options: donateOptions)]
     }()
     
     var body: some View {
