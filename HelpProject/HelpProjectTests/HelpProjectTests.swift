@@ -4,33 +4,57 @@
 //
 //  Created by Rahul Pahuja on 22/07/24.
 //
-
+import SwiftUI
 import XCTest
 @testable import HelpProject
 
+
 final class HelpProjectTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testResponseSuccess(){
+        
+        //Given(Arrange)
+        let expectedResponse = 1
+        
+        //When(Act)
+        let cal = Calculator()
+        let actualResponse = cal.getResponse()
+        
+        //Then(Assert)
+        XCTAssertEqual(expectedResponse,actualResponse)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testResponseFailure(){
+        
+        //Given(Arrange)
+        let expectedResponse = -11
+        
+        //When(Act)
+        let cal = Calculator()
+        let actualResponse = cal.getResponse()
+        
+        //Then(Assert)
+        XCTAssertNotEqual(expectedResponse,actualResponse)
+        
+       
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    //https://medium.com/appledeveloperacademy-ufpe/how-to-implement-ui-tests-with-swiftui-a-few-examples-636708ee26ad
+    
+//    override func setUpWithError() throws {
+//          // Set up the initial state required for the tests.
+//          continueAfterFailure = false
+//          XCUIApplication().launch()
+//      }
+    
+//    func testButtonExistsCheck() throws{
+//        let app = XCUIApplication()
+//        app.launch()
+//        
+//        //let button = app.buttons["Submit"]
+//        //XCTAssertTrue(button.exists)
+//    }
+    
+    
 }

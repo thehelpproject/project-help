@@ -15,3 +15,10 @@ struct HelpProjectApp: App {
         }
     }
 }
+
+
+struct Calculator {
+    public func getResponse()->Int{
+        return 1
+    }
+}
