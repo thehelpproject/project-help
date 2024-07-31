@@ -38,4 +38,12 @@ final class HelpProjectUITests: XCTestCase {
             }
         }
     }
+    
+    func testButtonExistsCheck() throws{
+            let app = XCUIApplication()
+            app.launch()
+    
+            let button = app.buttons["Submit"]
+            XCTAssertTrue(button.exists)
+    }
 }
