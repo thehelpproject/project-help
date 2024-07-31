@@ -6,7 +6,10 @@
 //
 import SwiftUI
 import XCTest
+//import ViewInspector //
 @testable import HelpProject
+
+//extension ContentView:Inspectable{}
 
 
 final class HelpProjectTests: XCTestCase {
