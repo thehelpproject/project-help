@@ -46,4 +46,12 @@ final class HelpProjectUITests: XCTestCase {
             let button = app.buttons["Submit"]
             XCTAssertTrue(button.exists)
     }
+    
+    func testTextFieldExistsCheck() throws{
+            let app = XCUIApplication()
+            app.launch()
+    
+            let field = app.textFields["Your Name"]
+            XCTAssertTrue(field.exists)
+    }
 }
