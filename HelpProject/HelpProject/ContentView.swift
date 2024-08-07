@@ -30,6 +30,7 @@ struct ContentView: View {
     @FocusState private var focus:Bool
     
     var body: some View {
+        Text("Blood Request Form").bold()
         VStack {
             HTextField(yourNameLabel,EMPTY_STRING)
             HTextField(yourLocationLabel,EMPTY_STRING)
@@ -42,8 +43,7 @@ struct ContentView: View {
             HButton("Submit")
         }.onAppear(perform: {
             focus = true
-        })
-        .padding()
+        }).padding()
     }
 }
 
